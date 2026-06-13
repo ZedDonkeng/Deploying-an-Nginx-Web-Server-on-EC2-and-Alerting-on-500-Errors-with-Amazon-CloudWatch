@@ -49,6 +49,7 @@ Provisions a complete staging environment in **us-east-1** using AWS CloudFormat
 ---
 
 ### Lab 2 — Nginx Logs to CloudWatch with 500 Error Alerting (`lab-guides/nginx-cloudwatch-lab.md`)
+**Prerequisites:** Lab 1 must be deployed and the `StagingWebServer` instance must be running and reachable via HTTP.
 
 Configures the EC2 instance from Lab 1 to ship Nginx access and error logs to **Amazon CloudWatch Logs** using the CloudWatch agent. Then builds an alerting pipeline that detects HTTP 500 errors and sends email notifications via **Amazon SNS**.
 
@@ -61,7 +62,8 @@ Configures the EC2 instance from Lab 1 to ship Nginx access and error logs to **
 5. Create a **CloudWatch Alarm** (Sum > 0, 1-minute period) on the 500 metric
 6. Wire the alarm to an **SNS topic** (`500-Alerts`) for real-time email notifications
 
-**Prerequisites:** Lab 1 must be deployed and the `StagingWebServer` instance must be running and reachable via HTTP.
+
+Lab2 step by step : [lab-guides-nginx-cloudwatch-lab](https://github.com/ZedDonkeng/Deploying-an-Nginx-Web-Server-on-EC2-and-Alerting-on-500-Errors-with-Amazon-CloudWatch/blob/main/nginx-cloudwatch-lab.md)
 
 ---
 
