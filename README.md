@@ -23,7 +23,7 @@ aws-labs/
 
 ## Labs
 
-### Lab 1 — Staging VPC and Nginx EC2 Instance (`cloudformation/vpc-stack.yaml`)
+### Lab 1 — Staging VPC and Nginx EC2 Instance ('vpc-stack.yaml`)
 
 Provisions a complete staging environment in **us-east-1** using AWS CloudFormation. No key pairs required — access is handled via AWS Systems Manager Session Manager.
 
@@ -38,11 +38,13 @@ Provisions a complete staging environment in **us-east-1** using AWS CloudFormat
 
 **How to deploy:**
 
-1. Open the [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation)
-2. Click **Create stack → With new resources**
-3. Upload `cloudformation/vpc-stack.yaml`
-4. Follow the prompts and click **Create stack**
-5. Once the stack reaches `CREATE_COMPLETE`, find the EC2 public DNS in the **Outputs** tab
+1. Open the [AWSconsole](https://console.aws.amazon.com)
+2. search **cloudformation**
+3. Click **Create stack → With new resources**
+4. select import 
+5. Upload [vpc-stack.yaml](https://github.com/ZedDonkeng/Deploying-an-Nginx-Web-Server-on-EC2-and-Alerting-on-500-Errors-with-Amazon-CloudWatch/blob/main/vpc-stack.yaml)
+6. Follow the prompts and click **Create stack**
+7. Once the stack reaches `CREATE_COMPLETE`, find the EC2 public DNS in the **Outputs** tab
 
 **Prerequisites:** An AWS account with permissions to create VPC, EC2, IAM, and CloudFormation resources.
 
