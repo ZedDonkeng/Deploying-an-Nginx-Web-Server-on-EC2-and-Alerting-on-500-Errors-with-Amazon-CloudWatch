@@ -62,7 +62,6 @@ Configures the EC2 instance from Lab 1 to ship Nginx access and error logs to **
 5. Create a **CloudWatch Alarm** (Sum > 0, 1-minute period) on the 500 metric
 6. Wire the alarm to an **SNS topic** (`500-Alerts`) for real-time email notifications
 
-
 Lab2 step by step : [lab-guides-nginx-cloudwatch-lab](https://github.com/ZedDonkeng/Deploying-an-Nginx-Web-Server-on-EC2-and-Alerting-on-500-Errors-with-Amazon-CloudWatch/blob/main/nginx-cloudwatch-lab.md)
 
 ---
